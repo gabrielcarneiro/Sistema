@@ -1,0 +1,14 @@
+<%= simple_form_for(@patrao) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nome %>
+    <%= f.input :endereco , label: 'Endereço'%>
+    <%= f.input :telefone %>
+    <%= f.input :proposta %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit 'Salvar' %>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @diarista.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @diarista.endereco %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @diarista.telefone %>
+</p>
+
+<p>
+  <strong>Diaria:</strong>
+  <%= @diarista.diaria %>
+</p>
+
+<%= link_to 'Edit', edit_diarista_path(@diarista) %> |
+<%= link_to 'Back', diaristas_path %>

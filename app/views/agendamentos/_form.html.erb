@@ -1,0 +1,15 @@
+<%= simple_form_for(@agendamento) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :Diarista ,label_method: :nome %>
+    <%= f.association :Patrao ,label_method: :nome %>
+    <%= f.input :data ,label: 'Data'%>
+    <%= f.input :hora %>
+    <%= f.input :diaria %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit 'Salvar'%>
+  </div>
+<% end %>

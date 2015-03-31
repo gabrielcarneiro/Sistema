@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Diaristas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Endereço</th>
+      <th>Telefone</th>
+      <th>Diaria</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diaristas.each do |diarista| %>
+      <tr>
+        <td><%= diarista.nome %></td>
+        <td><%= diarista.endereco %></td>
+        <td><%= diarista.telefone %></td>
+        <td><%= diarista.diaria %></td>
+        <td><%= link_to 'Show', diarista %></td>
+        <td><%= link_to 'Edit', edit_diarista_path(diarista) %></td>
+        <td><%= link_to 'Excluir', diarista, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Diarista', new_diarista_path %>

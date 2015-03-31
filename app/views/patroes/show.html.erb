@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @patrao.nome %>
+</p>
+
+<p>
+  <strong>Endereço:</strong>
+  <%= @patrao.endereco %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @patrao.telefone %>
+</p>
+
+<p>
+  <strong>Proposta:</strong>
+  <%= @patrao.proposta %>
+</p>
+
+<%= link_to 'Edit', edit_patrao_path(@patrao) %> |
+<%= link_to 'Back', patroes_path %>

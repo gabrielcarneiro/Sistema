@@ -1,4 +1,5 @@
-<h1>Trata-se de um programa de agendamento de diaristas. O usuário 
+<h1>Home#index</h1>
+<p>Trata-se de um programa de agendamento de diaristas. O usuário 
 
 (patrão) deverá cadastrar seu nome, telefones, e-mail, estado civil, proposta
 
@@ -32,5 +33,4 @@ determinado.
 
 O sistema fornecerá um feedback para ambos os usuários, relacionado 
 
-ao serviço prestado.</h1>
-
+ao serviço prestado.</p>

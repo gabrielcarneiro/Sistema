@@ -17,8 +17,8 @@
   <tbody>
     <% @agendamentos.each do |agendamento| %>
       <tr>
-        <td><%= agendamento.Diarista.nome%></td>
-        <td><%= agendamento.Patrao:nome%></td>
+        <td><%= agendamento.Diarista %></td>
+        <td><%= agendamento.Patrao.nome %></td>
         <td><%= agendamento.data %></td>
         <td><%= agendamento.hora %></td>
         <td><%= agendamento.diaria %></td>

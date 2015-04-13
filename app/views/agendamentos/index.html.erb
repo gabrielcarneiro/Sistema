@@ -24,7 +24,7 @@
         <td><%= agendamento.diaria %></td>
         <td><%= link_to 'Show', agendamento %></td>
         <td><%= link_to 'Edit', edit_agendamento_path(agendamento) %></td>
-        <td><%= link_to 'Excluir', agendamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Excluir', agendamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

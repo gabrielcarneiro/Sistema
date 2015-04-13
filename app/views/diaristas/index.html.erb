@@ -22,7 +22,7 @@
         <td><%= diarista.diaria %></td>
         <td><%= link_to 'Show', diarista %></td>
         <td><%= link_to 'Edit', edit_diarista_path(diarista) %></td>
-        <td><%= link_to 'Excluir', diarista, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Excluir', diarista, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

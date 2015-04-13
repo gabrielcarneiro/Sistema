@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Nome</th>
-      <th>Endereco</th>
+      <th>Endereço</th>
       <th>Telefone</th>
       <th>Diaria</th>
       <th colspan="3"></th>
@@ -20,9 +20,9 @@
         <td><%= diarista.endereco %></td>
         <td><%= diarista.telefone %></td>
         <td><%= diarista.diaria %></td>
-        <td><%= link_to 'Show', diarista %></td>
-        <td><%= link_to 'Edit', edit_diarista_path(diarista) %></td>
-        <td><%= link_to 'Destroy', diarista, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Show', diarista %></td>
+        <td><%= button_to 'Edit', edit_diarista_path(diarista) %></td>
+        <td><%= button_to 'Excluir', diarista, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

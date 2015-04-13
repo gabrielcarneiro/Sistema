@@ -1,22 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<div id="bg">
-  <div class="module">
-    <ul>
-      <li class="tab activeTab"><img src="http://i.imgur.com/Fk1Urva.png" alt="" class="icon"/></li>
-      <li class="tab" ><img src="http://i.imgur.com/ZsRgIDD.png" alt="" class="icon"/></li>
-      <li class="tab" ><img src="http://i.imgur.com/34Q50wo.png" alt="" class="icon"/></li>
-      <li class="tab" ><img src="http://i.imgur.com/LCCJ06E.png" alt="" class="icon"/></li>
-    </ul>
-    
-    <form class="form">
-      <input type="text" placeholder="First Name" class="textbox" />
-      <input type="text" placeholder="Last Name" class="textbox" />
-      <input type="text" placeholder="Email Address" class="textbox" />
-      <input type="button" value="Next" class="button" />
-    </form>
-  </div>
-</div>
+<p>
+  <strong>Diarista:</strong>
+  <%= @agendamento.Diarista %>
+</p>
+
+<p>
+  <strong>Patrao:</strong>
+  <%= @agendamento.Patrao %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @agendamento.data %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @agendamento.hora %>
+</p>
+
+<p>
+  <strong>Diaria:</strong>
+  <%= @agendamento.diaria %>
+</p>
 
 <%= link_to 'Edit', edit_agendamento_path(@agendamento) %> |
 <%= link_to 'Back', agendamentos_path %>

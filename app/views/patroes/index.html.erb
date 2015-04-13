@@ -22,7 +22,7 @@
         <td><%= patrao.proposta %></td>
         <td><%= link_to 'Show', patrao %></td>
         <td><%= link_to 'Edit', edit_patrao_path(patrao) %></td>
-        <td><%= link_to 'Excluir', patrao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Excluir', patrao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
